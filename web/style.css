@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa; /* light gray background */
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #333; /* dark text color for the header */
+}
+
+.dropdown .dropdown-toggle {
+    background-color: #007bff; /* blue background for dropdown */
+    color: white; /* white text color */
+    border: none;
+}
+
+.main {
+    padding: 20px;
+    text-align: center; /* center the content in main */
+}
+
+.btn-group .btn {
+    margin: 5px;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff; /* primary button with blue background */
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* secondary button with gray background */
+    color: white;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

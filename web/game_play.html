@@ -15,24 +15,39 @@
             <input type="text" id="username" name="username" readonly>
         </form>
     </header>
-    <body>
-        <div class="container">
-            <form>
-                <label for="score">Score</label><br>
-                <input type="text" id="score" name="score" readonly>
-            </form>
-            <form>
-                <label for="Time Remaining">Time Remaining</label><br>
-                <input type="text" id="Time Remaining" name="Time Remaining" readonly>
-            </form>
-        </div>
-    </body>
     <main class="p-3">
-        <p>Some text in the body.</p>
-        <div class="btn-group" role="group">
-            <button type="button" class="btn btn-primary">Button 1</button>
-            <button type="button" class="btn btn-secondary">Button 2</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 text-center">
+                    <label for="scoreField" class="form-label">Score</label>
+                    <input type="text" class="form-control" id="scoreField" readonly value="">
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-3 text-center">
+                    <label for="timerField" class="form-label">Time Remaining</label>
+                    <input type="text" class="form-control" id="timerField" readonly value="">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label for="siteWordsTextArea">Site Words</label>
+                        <textarea class="form-control" id="siteWordsTextArea" rows="5" readonly>
+        Your site words will appear here...
+                        </textarea>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+            <div class="bd-example m-0 border-0 d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary mx-5">Start</button>
+            <button type="button" class="btn btn-secondary mx-5">Pause/Exit</button>
+            </div></div></div>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

@@ -50,3 +50,13 @@ header h1 {
         align-items: stretch;
     }
 }
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blinking {
+    animation: blinker 1s linear infinite;
+}

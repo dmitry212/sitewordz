@@ -38,3 +38,21 @@ document.getElementById('startButton').addEventListener('click', function() {
         }
     }, 1000);
 });
+
+$(document).ready(function() {
+    $('#startButton').click(function() {
+        // Make an AJAX GET request
+        $.ajax({
+            url: '/get-first-word',
+            type: 'GET',
+            success: function(response) {
+                // Display the first word
+                $('#siteWordsTextArea').text(response.word);
+            },
+            error: function() {
+                // Handle errors (like no words found)
+                $('#siteWordsTextArea').text('Error fetching word.');
+            }
+        });
+    });
+});
